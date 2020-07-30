@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+.main-header {
+  height: 125px;
+  /* display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 25px; */
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	align-content: stretch;
+}
+.logo {
+  max-height: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.desktop-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.dropdown {
+  display: none;
+  justify-content: flex-end;
+  color: white;
+  font-size: 15px;
+  background-color: rgb(255, 238, 0);
+  border-radius: 10%;
+}
+
+.mobile-menu {
+  display: none;
+  justify-content: flex-end;
+}
+
+span {
+  padding-right: 20px;
+  color: white;
+}
+body {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+  background-color: #cccccc;
+ }
+
+ @media (max-width: 768px){
+  .main-header img {
+    height: 50px;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .dropdown {
+    display: initial;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: initial;
+    background: #3B3B3B;
+    position: fixed;
+    top: 125px;
+    right: 0px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 500px){
+  .main-header img {
+    height: 35px;
+  }
+
+  .react-logo {
+    height: 250px;
+  }
+
+  .transition-circle {
+    height: 200px;
+    width: 200px;
+  }
+}
